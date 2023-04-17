@@ -5,7 +5,7 @@
       <div class="flex justify-between">
         <div class="flex space-x-4">
           <!-- logo -->
-          <div class="py-6 flex justify-center items-center">
+          <div class="flex justify-center items-center">
             <NuxtLink class="uppercase pr-3 text-2xl font-bold" to="/"
               ><LogoSvg
             /></NuxtLink>
@@ -40,7 +40,7 @@
             <CartIcon />
           </NuxtLink>
           <button
-            class="border-2 my-4 border-white h-5 overflow-hidden felx flex-col justify-center items-center rounded-sm"
+            class="border-2 hidden lg:inline my-4 border-white h-5 overflow-hidden felx flex-col justify-center items-center rounded-sm"
           >
             <img class="w-6" src="/images/eg.png" alt="" />
           </button>
@@ -56,7 +56,11 @@
 
     <!-- mobile menu -->
     <div class="mobile-menu block">
-      <div class="side-full md:hidden" :class="isToglle ? 'toogle' : ''" @click="close">
+      <div
+        class="side-full md:hidden"
+        :class="isToglle ? 'toogle' : ''"
+        @click="close"
+      >
         <div :class="isToglle ? 'sidebar-body' : 'hidden'"></div>
         <SideBar />
       </div>
