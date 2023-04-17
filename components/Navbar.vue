@@ -89,7 +89,6 @@ export default {
 <style scoped>
 .side-full {
   position: fixed;
-  width: 100vh;
   height: 100vh;
   top: 0;
   left: -350px;
@@ -98,6 +97,7 @@ export default {
 }
 .toogle {
   left: 0;
+  width: 100vh;
 }
 .sidebar-body {
   position: fixed;
