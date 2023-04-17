@@ -75,7 +75,7 @@
   <style scoped>
 .top-footer {
   width: 100%;
-  height: calc(100vh - 76px);
+  min-height: 100vh;
 }
 .row {
   z-index: 1;

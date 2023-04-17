@@ -52,7 +52,7 @@
               <li
                 data-aos="zoom-in"
                 data-aos-duration="800"
-                class="mx-2 relative rounded-full flex justify-center items-center overflow-hidden"
+                class="mr-2 relative rounded-full flex justify-center items-center overflow-hidden"
                 v-for="src in imagesSrc"
                 :key="src"
                 @click="switchImg(src)"
