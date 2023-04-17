@@ -1,11 +1,11 @@
 <template>
   <!-- navbar goes here -->
   <nav class="bg-black text-white">
-    <div class="mx-auto px-12">
+    <div class="mx-auto px-10 py-6">
       <div class="flex justify-between">
         <div class="flex space-x-4">
           <!-- logo -->
-          <div class="flex justify-center items-center">
+          <div class="flex justify-start items-center">
             <NuxtLink class="uppercase pr-3 text-2xl font-bold" to="/"
               ><LogoSvg
             /></NuxtLink>
@@ -13,7 +13,7 @@
 
           <!-- primary nav -->
           <div
-            class="links hidden md:flex items-center space-x-1 py-6 text-gray-400"
+            class="links hidden md:flex items-center space-x-1 text-gray-400"
           >
             <NuxtLink to="/" class="pr-2 hover:text-white"
               >Curling Irons</NuxtLink
@@ -32,7 +32,7 @@
           <NuxtLink to="/" class="text-2xl">
             <font-awesome-icon :icon="['fas', 'magnifying-glass']" />
           </NuxtLink>
-          <NuxtLink to="/" class="text-2xl hidden lg:inline">
+          <NuxtLink to="/" class="text-2xl hidden md:inline">
             <font-awesome-icon :icon="['fas', 'circle-user']" />
           </NuxtLink>
           <NuxtLink to="/" class="text-2xl relative">
@@ -40,13 +40,13 @@
             <CartIcon />
           </NuxtLink>
           <button
-            class="border-2 hidden lg:inline my-4 border-white h-5 overflow-hidden felx flex-col justify-center items-center rounded-sm"
+            class="border-2 hidden md:inline my-4 border-white h-5 overflow-hidden felx flex-col justify-center items-center rounded-sm"
           >
             <img class="w-6" src="/images/eg.png" alt="" />
           </button>
           <!-- mobile button goes here -->
           <div class="md:hidden flex items-center">
-            <button class="mobile-menu-button" @click="open">
+            <button class="mobile-menu-button p-2" @click="open">
               <NavIcon />
             </button>
           </div>
