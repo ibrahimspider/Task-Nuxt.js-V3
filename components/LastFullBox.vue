@@ -35,7 +35,7 @@
       <div class="col-span-12 sm:col-span-7 z-10">
         <div class="h-full flex flex-col justify-center items-center w-full">
           <div
-            class="mb-6"
+            class="mb-6 h-full"
             data-aos="fade-left"
             data-aos-offset="500"
             data-aos-duration="800"
@@ -121,12 +121,12 @@ export default {
 }
 .color-4 {
   color: rgb(112, 112, 112);
-  font-size: clamp(1.3rem, 2vw, 1rem);
+  font-size: clamp(1.1rem, 2.7vw, 1rem);
 }
 .btn {
   display: inline-block;
   border: 1px solid #000;
-  padding: 7px 50px;
+  padding: 2px 50px;
   transition: 0.2s ease-in-out;
   line-height: 35px;
   font-size: clamp(1rem, 1.7vw, 1.5rem);
@@ -153,5 +153,10 @@ export default {
 .img-slider li img {
   height: 4rem;
   margin: auto;
+}
+@media screen and (max-width: 500px) {
+  .btn {
+    padding: 2px 30px;
+  }
 }
 </style>
