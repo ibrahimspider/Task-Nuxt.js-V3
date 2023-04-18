@@ -45,12 +45,11 @@
 </template>
 <script setup lang="ts">
 const nuxtApp = useNuxtApp();
-const loading = ref(false);
-nuxtApp.hook("page:start", () => {
-  loading.value = true;
-});
-nuxtApp.hook("page:finish", () => {
-  loading.value = false;
+const loading = ref(true);
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false;
+  }, 500);
 });
 </script>
 <style scoped>
