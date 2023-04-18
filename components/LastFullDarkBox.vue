@@ -33,13 +33,13 @@
         </div>
       </div>
       <div class="col-span-12 sm:col-span-7 z-10">
-        <div class="h-full flex flex-col justify-center items-center w-full">
-          <div
-            class="mb-6 h-full"
-            data-aos="fade-left"
-            data-aos-offset="500"
-            data-aos-duration="800"
-          >
+        <div
+          class="h-full flex flex-col justify-center items-center w-full"
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="800"
+        >
+          <div class="mb-6">
             <NuxtLink class="img" to="/">
               <img
                 :class="switchState ? 'switch' : ''"

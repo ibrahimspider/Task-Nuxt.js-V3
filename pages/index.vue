@@ -1,5 +1,6 @@
 <template>
   <div class="overflow-hidden w-full">
+    <Loader v-if="loading" />
     <!-- start header -->
     <Header />
     <!-- end header -->
@@ -37,14 +38,20 @@
     <!-- start Top-Footer -->
     <TopFooter />
     <!-- end Top-Footer -->
-    <!-- start footer -->
-    <Footer />
-    <!-- end footer -->
+
     <!-- mobile tabs -->
     <MobileTabs />
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
+const nuxtApp = useNuxtApp();
+const loading = ref(false);
+nuxtApp.hook("page:start", () => {
+  loading.value = true;
+});
+nuxtApp.hook("page:finish", () => {
+  loading.value = false;
+});
 </script>
 <style scoped>
 </style>
